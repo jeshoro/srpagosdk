@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Grupo Telnet
+-->
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.grupotelnet.srpago"
+    version="1.0.0">
+    <name>Sr Pago</name>
+    <description>Plugin para Sr. Pago</description>
+    <license>Apache 2.0</license>
+    <keywords>grupotelnet,srpago</keywords>
+
+    <engines>
+        <engine name="cordova-android" version=">=6.3.0" />
+    </engines>
+
+    <js-module src="www/SrPago.js" name="Srpago">
+        <clobbers target="gpotelnet" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Srpago">
+                <param name="android-package" value="org.gpotelnet.Srpago"/>
+            </feature>
+        </config-file>
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+			<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+			<uses-permission android:name="android.permission.INTERNET" />
+			<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+        </config-file>
+
+
+        <source-file src="src/LocationUpdateService.java" target-dir="src/org/apache/cordova/srpago" />
+        <source-file src="src/SignatureActivity.java" target-dir="src/org/apache/cordova/srpago" />
+        <source-file src="src/SrPagoActivity.java" target-dir="src/org/apache/cordova/srpago" />
+        <source-file src="src/SrPagoDefinitions.java" target-dir="src/org/apache/cordova/srpago" />
+		<source-file src="src/SrPagoLocationManager.java" target-dir="src/org/apache/cordova/srpago" />
+		<source-file src="src/SrPagoTransaction.java" target-dir="src/org/apache/cordova/srpago" />
+		
+        <source-file src="src/android/xml/provider_paths.xml" target-dir="res/xml" />
+
+        <framework src="com.android.support:support-v4:24.1.1+" />
+
+      </platform>
+
+</plugin>
