@@ -1,6 +1,6 @@
 {
   "name": "telnet-plugin-srpago",
-  "version": "4.0.4-dev",
+  "version": "1.0.0",
   "description": "Sr Pago Plugin",
   "types": "./types/index.d.ts",
   "cordova": {
@@ -12,9 +12,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jeshoro/srpagosdk"
-  },
-  "bugs": {
-    "url": "https://issues.apache.org/jira/browse/CB"
   },
   "keywords": [
     "srpago",

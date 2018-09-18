@@ -34,14 +34,13 @@
         </config-file>
 
 
-        <source-file src="src/LocationUpdateService.java" target-dir="src/org/apache/cordova/srpago" />
-        <source-file src="src/SignatureActivity.java" target-dir="src/org/apache/cordova/srpago" />
-        <source-file src="src/SrPagoActivity.java" target-dir="src/org/apache/cordova/srpago" />
-        <source-file src="src/SrPagoDefinitions.java" target-dir="src/org/apache/cordova/srpago" />
-		<source-file src="src/SrPagoLocationManager.java" target-dir="src/org/apache/cordova/srpago" />
-		<source-file src="src/SrPagoTransaction.java" target-dir="src/org/apache/cordova/srpago" />
-		
-        <source-file src="src/android/xml/provider_paths.xml" target-dir="res/xml" />
+        <source-file src="src/LocationUpdateService.java" target-dir="src/telnet/srpago" />
+        <source-file src="src/SignatureActivity.java" target-dir="src/telnet/srpago" />
+        <source-file src="src/SrPagoActivity.java" target-dir="src/telnet/srpago" />
+        <source-file src="src/SrPagoDefinitions.java" target-dir="src/telnet/srpago" />
+		<source-file src="src/SrPagoLocationManager.java" target-dir="src/telnet/srpago" />
+		<source-file src="src/SrPagoTransaction.java" target-dir="src/telnet/srpago" />
+	
 
         <framework src="com.android.support:support-v4:24.1.1+" />
 
